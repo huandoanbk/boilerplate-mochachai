@@ -78,8 +78,8 @@ suite('Unit Tests', function () {
     });
     // #10
     test('#approximately', function () {
-      assert.approximately(weirdNumbers(0.5), 1, 0);
-      assert.approximately(weirdNumbers(0.2), 1, 0);
+      assert.approximately(weirdNumbers(0.5), 1, 0.5);
+      assert.approximately(weirdNumbers(0.2), 1, 0.8);
     });
   });
 
@@ -95,8 +95,8 @@ suite('Unit Tests', function () {
     });
     // #12
     test('Array #include, #notInclude', function () {
-      assert.include(winterMonths, 'jul', "It's summer in july...");
-      assert.notInclude(backendLanguages, 'javascript', 'JS is a backend language');
+      assert.notInclude(winterMonths, 'jul', "It's summer in july...");
+      assert.include(backendLanguages, 'javascript', 'JS is a backend language');
     });
   });
 
