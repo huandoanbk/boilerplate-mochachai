@@ -13,8 +13,8 @@ suite('Unit Tests', function () {
     });
     // #2
     test('#isDefined, #isUndefined', function () {
-      assert.fail(null, 'null is not undefined');
-      assert.fail(undefined, 'undefined IS undefined');
+      assert.fail(isDefined, 'null is not undefined');
+      assert.fail(isUndefined, 'undefined IS undefined');
       assert.fail('hello', 'A string is not undefined');
     });
     // #3
